@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 52" width="210" height="52" fill="none">
+  <!-- Architectural 'A' Emblem -->
+  <g fill="#5c6470">
+    <!-- Left outer beam -->
+    <polygon points="26,3 32,3 10,47 4,47" />
+    <!-- Right outer beam -->
+    <polygon points="26,3 32,3 54,47 48,47" />
+    <!-- Roof overhang crossbar -->
+    <rect x="2" y="24" width="54" height="3.2" rx="0.5" />
+    <!-- Upper triangle inner bar -->
+    <polygon points="23,20 35,20 34,22.5 24,22.5" />
+    <!-- Ground foundation line -->
+    <rect x="3" y="47" width="52" height="2.4" rx="1" />
+    <!-- Center House Wall Pillars -->
+    <rect x="18" y="27.5" width="4.5" height="19.5" />
+    <rect x="35.5" y="27.5" width="4.5" height="19.5" />
+    <!-- Center 4-Pane Window Frame -->
+    <rect x="24.5" y="32" width="9" height="9" fill="none" stroke="#5c6470" stroke-width="1.5" />
+    <line x1="29" y1="32" x2="29" y2="41" stroke="#5c6470" stroke-width="1.1" />
+    <line x1="24.5" y1="36.5" x2="33.5" y2="36.5" stroke="#5c6470" stroke-width="1.1" />
+  </g>
+
+  <!-- Typography: chievers -->
+  <text x="64" y="25" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-style="italic" font-weight="bold" fill="#5c6470" letter-spacing="0.02em">chievers</text>
+
+  <!-- Horizontal divider line -->
+  <path d="M 64 30 L 195 30" stroke="#5c6470" stroke-width="1.4" stroke-linecap="round" />
+
+  <!-- Typography: Associate -->
+  <text x="66" y="45" font-family="Georgia, 'Times New Roman', serif" font-size="14.5" font-style="italic" font-weight="bold" fill="#6d7582" letter-spacing="0.04em">Associate</text>
+</svg>

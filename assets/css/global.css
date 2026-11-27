@@ -1,0 +1,196 @@
+/* Shared reset, theme tokens, typography, navigation, and reusable controls */
+:root {
+  --aib-primary-bg: #000000;
+  --aib-primary-text: #ffffff;
+  --aib-accent-color: #851a1c;
+  --tg-body-font-family: "Plus Jakarta Sans", sans-serif;
+  --tg-heading-font-family: "Urbanist", sans-serif;
+  --tg-primary-color: darkblue;
+  --tg-secondary-color: #00194c;
+  --tg-body-font-color: #334770;
+  --tg-heading-font-color: #00194c;
+  --tg-paragraph-color: #000000;
+  --tg-section-background: #f8faff;
+  --tg-body-font-size: 13.16px;
+  --tg-body-font-weight: 500;
+  --tg-heading-font-weight: 700;
+  --tg-body-line-height: 1.62;
+  --tg-heading-line-height: 1.2;
+  --heading-hero: clamp(28px, 2.5vw + 16px, 42px);
+  --heading-section: clamp(23px, 1.4vw + 15px, 30px);
+  --heading-sub: clamp(19px, 1vw + 13px, 24px);
+  --heading-card: clamp(16.5px, 0.35vw + 14px, 18px);
+  --tg-text-transform: capitalize;
+  --tg-blue: #0049dc;
+  --tg-metallic-blue: #324b7d;
+  --tg-cornflower-blue: #b3ccff;
+  --tg-steel-blue: #b6c1db;
+  --tg-lavender: #e6eeff;
+  --tg-indigo: #6610f2;
+  --tg-purple: #6f42c1;
+  --tg-pink: #ff005c;
+  --tg-red: #ff3c3c;
+  --tg-orange: #851a1c;
+  --tg-yellow: #ffb930;
+  --tg-green: #219653;
+  --tg-teal: #20c997;
+  --tg-cyan: #0dcaf0;
+  --tg-white: #ffffff;
+  --tg-black: #000000;
+  --tg-gray: #f1f4fc;
+  --tg-gray-two: #f1f5ff;
+  --tg-gray-three: #96a1b8;
+  --tg-gray-four: #667594;
+  --tg-border-color: #e1e5ee;
+  --facebook: #3b5998;
+  --twitter: #00acee;
+  --linkedin: #1976d2;
+  --pinterest: #3b5998;
+  --youtube: #c4302b;
+  --skype: #00aff0;
+  --paper: var(--tg-section-background);
+  --ink: var(--tg-heading-font-color);
+  --muted: var(--tg-body-font-color);
+  --orange: var(--tg-orange);
+  --white: var(--tg-white);
+  --line: var(--tg-border-color);
+  --display: var(--tg-heading-font-family);
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+}
+body {
+  margin: 0;
+  font-family: var(--tg-body-font-family);
+  font-size: var(--tg-body-font-size);
+  font-weight: var(--tg-body-font-weight);
+  line-height: var(--tg-body-line-height);
+  color: var(--tg-body-font-color);
+  background: var(--tg-section-background);
+  overflow-x: clip;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--tg-heading-font-family);
+  font-weight: var(--tg-heading-font-weight);
+  line-height: var(--tg-heading-line-height);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--display);
+}
+
+* {
+  box-sizing: border-box;
+}
+@media (max-width: 767.98px) {
+  .section-spacing {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.section-spacing {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.site-header {
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: 999;
+}
+.site-nav {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(calc(100% - 40px), 1360px);
+  min-height: 58px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 5px 9px 5px 11px;
+  box-shadow: 0 6px 25px #160a0610;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18.8px;
+  font-weight: 600;
+  letter-spacing: -0.7px;
+  white-space: nowrap;
+}
+.brand img {
+  height: 25px;
+  width: 22px;
+  object-fit: contain;
+}
+.nav-links {
+  gap: 24px;
+}
+.nav-links .nav-link {
+  position: relative;
+  color: #242124;
+  font-size: 11.28px;
+  font-weight: 500;
+  padding: 7px 0;
+}
+.nav-links .nav-link.active {
+  color: var(--orange);
+}
+.button-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: var(--paper);
+  border-radius: 4px;
+  padding: 4px 4px 4px 15px;
+  font-size: 11.28px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: 0.2s;
+}
+.button-link:hover {
+  background: #e8ddd3;
+}
+.button-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  display: grid;
+  place-items: center;
+  background: var(--orange);
+  color: #fff;
+  font-size: 12.22px;
+}
+.navbar-toggler {
+  padding: 5px 8px;
+  border: 0;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+@font-face {
+  font-family: Gambarino;
+  src: url("https://cdn.prod.website-files.com/6aba97212ed025ad14af070f/6aba975448517220d5a6c9bf_Gambarino-Regular.otf")
+    format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
